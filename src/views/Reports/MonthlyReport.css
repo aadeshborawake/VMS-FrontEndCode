@@ -1,0 +1,122 @@
+/* MonthlyReport.css */
+
+/* Container for the entire component */
+.order-component {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Header styling */
+.order-component h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Year and month selection styling */
+.order-component select {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Button styling */
+.order-component button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Loading indicator styling */
+.order-component p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Error message styling */
+.order-component .error {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Advanced filter container */
+.order-component .advanced-filter {
+  margin-top: 20px;
+}
+
+/* Filter row styling */
+.order-component .filter-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Label styling */
+.order-component label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Date input styling */
+.order-component input[type="date"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Table styling */
+.order-component table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-component th,
+.order-component td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.order-component th {
+  background-color: #f2f2f2;
+}
+
+/* Advanced filter form */
+.order-component .advanced-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Apply and Close button container */
+.order-component .filter-actions {
+  margin-top: 10px;
+}
+
+/* Apply and Close button styling */
+.order-component .filter-actions button {
+  margin-right: 10px;
+}
+
+/*Added*/
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-row .select-wrapper {
+  flex: 1;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.filter-row label {
+  margin-right: 10px; /* Adjust as needed */
+}
+

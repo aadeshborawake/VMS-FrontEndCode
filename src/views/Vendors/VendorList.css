@@ -1,0 +1,33 @@
+/* VendorList.css */
+
+.vendor-table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.vendor-table th,
+.vendor-table td {
+  padding: 12px; /* Increased padding for better spacing */
+  border: 1px solid #ddd; /* Add borders to cells */
+  text-align: left; /* Align text to the left */
+}
+
+.vendor-table th {
+  background-color: #007bff; /* Change background color of column headers */
+  color: #fff; /* Change text color of column headers to white */
+  font-weight: bold;
+}
+
+.vendor-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.vendor-table tbody tr:hover {
+  background-color: #eaeaea;
+}

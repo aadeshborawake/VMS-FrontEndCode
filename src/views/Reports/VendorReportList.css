@@ -1,0 +1,73 @@
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.filter-group {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group label {
+  font-weight: bold;
+  color: #4CAF50; /* Green color for labels */
+}
+
+.filter-group input[type="date"],
+.filter-group input[type="month"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-group button {
+  padding: 8px 16px;
+  background-color: #4CAF50; /* Green button background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.filter-group button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%; /* Ensure the container takes up the full width */
+  max-width: none; /* Remove any maximum width constraints */
+}
+
+.table-container table {
+  width: 100%; /* Ensure table occupies full width */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50; /* Green header background */
+  color: white;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}

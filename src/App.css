@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* Reset default margin and padding */
+  body, h1, h2, h3, p, ul, li {
+    margin: 1px;
+    padding: 1px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* Set base font and background color */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Navigation bar styles */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
   }
-}
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 30px;
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Content area styles */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Individual content item styles */
+  .content-item {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .content-item {
+      width: 100%;
+    }
+  }
+
+  /* CSS for Reports */
+  .report-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .report-point {
+    margin-bottom: 10px; /* Adjust spacing between points */
+  }
+
+  .active {
+    font-weight: bold; /* Example of active link styling */
+  }
+
+
+
+
+
+  /* Login */
+
+  .login-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px; /* Adjust the width as needed */
+    margin: auto;
+    padding: 50px; /* Adjust the padding as needed */
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-container input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .login-container input:focus {
+    border: 1px solid #007bff;
+  }
+
+  .login-container .error-message {
+    color: #dc3545;
+    margin-bottom: 15px;
+  }
+
+  .login-container button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .login-container button:hover {
+    background-color: #0056b3;
+  }
+
+  .login-container p {
+    text-align: right; /* Align text to the left */
+    margin-left: 0px; /* Add margin to move the link to the left */
+  }
+
+  .login-container p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .login-container p a:hover {
+    text-decoration: underline;
+  }
+
+  /* Register Vendor */
+
+  .register-link {
+    color: #007bff; /* Change color to match your design */
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  /* VendorRegistrationForm.css */
+
+  .vendor-registration-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+  }
+
+  .vendor-registration-container h2 {
+    margin-bottom: 20px;
+  }
+
+  .vendor-registration-form input {
+    width: calc(100% - 22px); /* Subtract padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .vendor-registration-form button {
+    width: calc(100% - 22px); /* Subtract padding */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .vendor-registration-form button:hover {
+    background-color: #0056b3;
+  }
+
+
+
